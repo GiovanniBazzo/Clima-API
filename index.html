@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Consultor Climático</h1>
+    <div class="blocoA">
+        <div>
+            <form class="formulario" action="">
+                <div class="blocoB">
+                    <label for="">Cidade</label>
+                    <input id="campoCidade" class="campo" type="text">
+                </div>
+                <button id="botao" type="submit" class="botao">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <div class="resultado">
+            <h1 id="city">Cidade</h1>
+            <div class="blocoC">
+                <div class="temperatura">
+                    <p class="temp" id="temperatura"><span>0</span>°C</p>
+                    <label for="">Temperatura</label>
+                </div>
+                <div class="clima">
+                    <img class="sol" src="http://openweathermap.org/img/wn/01d.png" alt="" id="weather-icon">
+                    <label id="descricao" for="">Clima</label>
+                </div>
+                <div class="umidade">
+                    <p id="umidade" class="temp"><span>0</span>%</p>
+                    <label for=""><i class="fa-solid fa-droplet"></i><span> Umidade</span></label>
+                </div>
+                <div class="vento">
+                    <p id="vento" class="temp"><span>0</span>km/h</p>
+                    <label for=""><span> Vento</span></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javaScript.js"></script>
+</body>
+</html>

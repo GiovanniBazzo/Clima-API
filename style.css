@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&display=swap');
+
+* {
+    font-family: "Baloo Paaji 2";
+}
+
+body {
+    background-color: #7AB2D3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.resultado {
+    border: solid 2px;
+    border-color: white;
+    width: 680px;
+    height: 400px;
+    border-radius: 8px;
+    background-color: #B9E5E8;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blocoA {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+}
+
+.botao {
+    width: 75px;
+    height: 30px;
+    background-color: rgb(189, 222, 255);
+    border-radius: 4px
+}
+
+.campo {
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.blocoB {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.sol {
+    width: 100px;
+}
+
+.clima {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 70px;
+}
+
+.temp {
+    font-size: 53px;
+    margin: 0%;
+}
+
+.temperatura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.umidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.vento {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.blocoC {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1050px) {
+    .blocoA {
+        flex-direction: column;
+        align-items: center;
+        width: 600px;
+    }
+
+    .resultado {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .resultado {
+        height: 750px;
+        width: 400px;
+    }
+
+    .umidade {
+        margin: 0;
+    }
+
+    .blocoC {
+        flex-direction: column;
+    }
+
+    .blocoA {
+        width: 450px;
+    }
+
+    label {
+        font-size: 28px;
+    }
+
+    .campo {
+        font-size: 28px;
+        height: 35px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .resultado {
+        width: 250px;
+        height: 800px;
+    }
+
+    .blocoA {
+        width: 300px;
+    }
+
+    h1 {
+        width: 200px;
+    }
+
+}
